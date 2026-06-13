@@ -5,12 +5,6 @@ with customers as (
 
 ),
 
-orders as (
-
-    select * from {{ ref('stg_jaffle_shop__orders')}}
-
-),
-
 new_orders as (
     select * from {{ ref('fct_orders')}}
 ),
