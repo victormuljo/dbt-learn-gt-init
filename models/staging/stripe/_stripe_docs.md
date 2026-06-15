@@ -1,4 +1,4 @@
-{ % docs stripe_payments % }
+{% docs stripe_payments %}
 
 One of the following values: 
 
@@ -9,4 +9,4 @@ One of the following values:
 | bank_transfer          | Order placed using bank transfer                 |
 | gift_card              | Order placed with gift card                      |
 
-{ % enddocs % }
+{% enddocs %}
