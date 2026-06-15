@@ -1,8 +1,10 @@
 sources:
   - name: stripe
+    description: Copy of stripe database
     database: raw
     tables:
       - name: payment
+        description: "{{docs('stripe_payments')}}"
         config:
           freshness: 
             warn_after:

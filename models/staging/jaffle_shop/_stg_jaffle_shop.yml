@@ -8,8 +8,10 @@ models:
           - unique
           - not_null
   - name: stg_jaffle_shop__orders
+    description: Staged order data from our jaffle shop app
     columns:
       - name: order_id
+        description: primary key for orders
         data_tests:
           - unique
           - not_null
@@ -20,6 +22,7 @@ models:
               arguments:
                 values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
       - name: customer_id
+        description: Foreign key to customers table
         data_tests:
           - relationships:
               arguments:

@@ -1,12 +1,15 @@
 # establish source we are connected to
 sources: 
   - name: jaffle_shop
+    description: Copy of postgres database
     database: raw
     schema: jaffle_shop
     tables:
       - name: customers
+        description: Raw customers data
         columns:
           - name: id
+            description: primary key
             data_tests:
               - unique
               - not_null
